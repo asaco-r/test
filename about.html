@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>プロフィール</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+        <h1>About Me</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav id="menu" class="menu">
+            <a href="index.html">ホーム</a>
+            <a href="about.html">プロフィール</a>
+        </nav>
+        </header>
+
+        <main class="profile">
+
+        <img src="images/profile.jpg" alt="プロフィール画像" class="profile-img">
+
+        <h2>あなたの名前（活動名）</h2>
+
+        <p class="intro">
+            手作りお菓子が好きで、日々いろいろなお菓子を作っています。<br>
+            見た目も味も楽しめるスイーツを目指しています。
+        </p>
+
+        <h3>SNS</h3>
+        <ul class="sns">
+            <li><a href="https://instagram.com/youraccount" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/youraccount" target="_blank">X（Twitter）</a></li>
+            <li><a href="https://youtube.com/yourchannel" target="_blank">YouTube</a></li>
+        </ul>
+
+        </main>
+
+        <footer>
+            <p>© 2026 My Sweets</p>
+        </footer>
+        <script>
+            function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
