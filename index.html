@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>お菓子ギャラリー</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>My Sweets Gallery</h1>
+
+            <div class="menu-icon" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <nav id="menu" class="menu">
+                <a href="index.html">ホーム</a>
+                <a href="about.html">プロフィール</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <section class="gallery">
+
+            <div class="card">
+                <img src="images/cake1.jpg" alt="チョコケーキ">
+                <h2>チョコケーキ</h2>
+                <p>しっとり濃厚なチョコレートケーキ</p>
+            </div>
+
+            <div class="card">
+                <img src="images/cookie1.jpg" alt="クッキー">
+                <h2>クッキー</h2>
+                <p>サクサク食感のバタークッキー</p>
+            </div>
+
+            <div class="card">
+                <img src="images/tart1.jpg" alt="フルーツタルト">
+                <h2>フルーツタルト</h2>
+                <p>季節のフルーツたっぷり</p>
+            </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 My Sweets</p>
+        </footer>
+        
+        <script>
+            function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
