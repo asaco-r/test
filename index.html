@@ -24,10 +24,12 @@
         <main>
             <section class="gallery">
 
-            <div class="card">
+            <div class="card" onclick="toggleDesc(this)">
                 <img src="images/cake1.jpg" alt="チョコケーキ">
                 <h2>チョコケーキ</h2>
                 <p>しっとり濃厚なチョコレートケーキ</p>
+
+                <p class="desc">チョコレートの香りがする、ふわふわの食感。</p>
             </div>
 
             <div class="card">
@@ -51,9 +53,15 @@
         
         <script>
             function toggleMenu() {
-            const menu = document.getElementById("menu");
-            menu.classList.toggle("active");
+                const menu = document.getElementById("menu");
+                menu.classList.toggle("active");
             }
+
+            // 追加：カードクリック用
+            function toggleDesc(card) {
+            card.classList.toggle("active");
+            }
+        
         </script>
     </body>
 </html>

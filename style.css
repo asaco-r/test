@@ -26,7 +26,8 @@ h1 {
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
+  cursor: pointer;
 }
 
 .card img {
@@ -102,3 +103,18 @@ header {
 .menu a:hover {
   background: #f0f0f0;
 }
+
+/* 最初は非表示 */
+.desc {
+  display: none;
+  margin: 10px;
+  font-size: 14px;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+/* 表示状態 */
+.card.active .desc {
+  display: block;
+}
+
